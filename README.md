@@ -23,7 +23,7 @@
   - `Application.java`
     - `main()`: `Calculator`의 모든 메서드를 호출하여 결과 출력
 
-📄 **[문제 PDF 보기](chap03/chap03-method-and-api-practice-quiestion.com.greedy.level01.basic.pdf)**
+📄 **[문제 PDF 보기](pdf/chap03-method-and-api-practice-quiestion.com.greedy.level01.basic.pdf)**
 
 **🛠 실행 예시:**
 ```
@@ -50,7 +50,7 @@
   - `Application.java`
     - `main()`: `RandomMaker`의 모든 메서드를 호출하여 결과 출력
 
-📄 **[문제 PDF 보기](chap/chap03-method-and-api-practice-quiestion.com.greedy.level02.normal.pdf)**
+📄 **[문제 PDF 보기](pdf/chap03-method-and-api-practice-quiestion.com.greedy.level02.normal.pdf)**
 
 **🛠 실행 예시:**
 ```
