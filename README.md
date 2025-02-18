@@ -2,27 +2,36 @@
 
 이 저장소는 Java Programming 실습 문제 풀이를 포함하고 있습니다.
 
+<br>
 
-📂 **파일 구조**
+## 📂 파일 구조
+
+<details>
+<summary><strong>📂 </strong></summary>
+ 
 ```
 📂 chap01-literal-and-variable-practice-question.src
  ├── 📂 com.meowdule.level01.basic
  │   ├── Application1.java
  │   ├── Application2.java
- ├── 📂 com.meowdule.level02.normal
- │   ├── Application1.java
- │   ├── Application2.java
+ └── 📂 com.meowdule.level02.normal
+     ├── Application1.java
+     └── Application2.java
 📂 chap03-method-and-api-practice-question.src
  ├── 📂 com.greedy.level01.basic
  │   ├── Calculator.java
  │   └── Application.java
- ├── 📂 com.greedy.level02.normal
- │   ├── RandomMaker.java
- │   └── Application.java
+ └── 📂 com.greedy.level02.normal
+     ├── RandomMaker.java
+     └── Application.java
 
 ```
+</details>
 
----
+<br><br><br>
+
+## 📄 실습 문제 내용
+
 
 <details>
 <summary><strong>📁 chap01-literal-and-variable-practice-question</strong></summary>
@@ -86,7 +95,6 @@
 
 ---
 
----
 
 <details>
 <summary><strong>📁 chap03-method-and-api-practice-question</strong></summary>
@@ -151,6 +159,8 @@ SLDIBMELEA
 </details>
 
 ---
+
+<br><br><br>
 
 ## 📌 참고 사항
 
