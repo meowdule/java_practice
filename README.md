@@ -5,6 +5,13 @@
 
 📂 **파일 구조**
 ```
+📂 chap01-literal-and-variable-practice-question.src
+ ├── 📂 com.meowdule.level01.basic
+ │   ├── Application1.java
+ │   ├── Application2.java
+ ├── 📂 com.meowdule.level02.normal
+ │   ├── Application1.java
+ │   ├── Application2.java
 📂 chap03-method-and-api-practice-question.src
  ├── 📂 com.greedy.level01.basic
  │   ├── Calculator.java
@@ -12,8 +19,72 @@
  ├── 📂 com.greedy.level02.normal
  │   ├── RandomMaker.java
  │   └── Application.java
+
 ```
 
+---
+
+<details>
+<summary><strong>📁 chap01-literal-and-variable-practice-question</strong></summary>
+
+
+<details>
+<summary><strong>📂 Level 01 - Basic</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.level01.basic`
+- **구현 클래스:**
+  - `Application1.java`
+    - 두 개의 정수를 선언하여 사칙연산을 수행하고 결과 출력
+  - `Application2.java`
+    - 사각형의 넓이와 둘레를 계산하여 출력
+
+**🛠 실행 예시:**
+```
+-- 출력 예시 - Application1 --
+더하기 결과  : 50
+빼기 결과 : -10
+곱하기 결과 : 600
+나누기한 몫 : 0
+나누기한 나머지 : 20
+```
+```
+-- 출력 예시 - Application2 --
+면적 : 455.0
+둘레 : 97.8
+```
+</details>
+
+<details>
+<summary><strong>📂 Level 02 - Normal</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.level02.normal`
+- **구현 클래스:**
+  - `Application1.java`
+    - 문자 'a'의 유니코드 값을 출력
+  - `Application2.java`
+    - 국어, 수학, 영어 점수를 저장하고 총점과 평균을 정수로 변환하여 출력
+
+**🛠 실행 예시:**
+```
+-- 출력 예시 - Application1 --
+문자 a의 unicode : 97
+```
+```
+-- 출력 예시 - Application1 --
+총점 : 201
+평균 : 67
+```
+</details>
+
+
+
+</details>
+
+---
 
 ---
 
