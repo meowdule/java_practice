@@ -3,6 +3,8 @@
 이 저장소는 **Greedy 문제집 Chap03**의 메서드 및 API 실습 문제 풀이를 포함하고 있습니다.
 
 
+📂 **파일 구조**
+```
 📂 chap03-method-and-api-practice-question.src
  ├── 📂 com.greedy.level01.basic
  │   ├── Calculator.java
@@ -10,14 +12,17 @@
  ├── 📂 com.greedy.level02.normal
  │   ├── RandomMaker.java
  │   └── Application.java
+```
+
 
 ---
 
 <details>
-<summary><strong>📁 chap03</strong></summary>
+<summary><strong>📁 chap03-method-and-api-practice-question</strong></summary>
+
 
 <details>
-<summary><strong>📂 level01 - Basic</strong></summary>
+<summary><strong>📂 Level 01 - Basic</strong></summary>
 
 **📌 문제 개요**
 
@@ -45,7 +50,7 @@
 </details>
 
 <details>
-<summary><strong>📂 level02 - Normal</strong></summary>
+<summary><strong>📂 Level 02 - Normal</strong></summary>
 
 **📌 문제 개요**
 
@@ -70,6 +75,13 @@ SLDIBMELEA
 ```
 </details>
 
+
+
 </details>
 
 ---
+
+## 📌 참고 사항
+
+- 한화 beyond sw캠프 15기의 java-programming 과정의 실습 과제 제출용 자료 입니다.
+
