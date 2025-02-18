@@ -2,6 +2,15 @@
 
 이 저장소는 **Greedy 문제집 Chap03**의 메서드 및 API 실습 문제 풀이를 포함하고 있습니다.
 
+
+📂 chap03-method-and-api-practice-question.src
+ ├── 📂 com.greedy.level01.basic
+ │   ├── Calculator.java
+ │   └── Application.java
+ ├── 📂 com.greedy.level02.normal
+ │   ├── RandomMaker.java
+ │   └── Application.java
+
 ---
 
 <details>
