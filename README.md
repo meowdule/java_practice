@@ -37,7 +37,7 @@
  │   └── 📂 level04.advanced
  │       ├── Application1.java
  │       └── Application2.java
- └── 📂 section01
+ └── 📂 section02
      ├── 📂 level02.normal
      │   ├── Application1.java
      │   ├── Application2.java
@@ -48,7 +48,20 @@
      │   └── Application3.java
      └── 📂 level04.advanced
          └── Application1.java
-
+     
+📂 chap05-array
+ ├── 📂 section01.array
+ │   ├── 📂 level02.normal
+ │   │   ├── Application1.java
+ │   │   └── Application2.java
+ │   ├── 📂 level03.hard
+ │   │   └── Application1.java
+ │   └── 📂 level04.advanced
+ │       ├── Application1.java
+ │       └── Application2.java
+ └── 📂 section02.demensional_array
+     └── 📂 level03.hard
+         └── Application1.java
 ```
 </details>
 
@@ -443,6 +456,157 @@ e F d
 
 </details>
 
+---
+
+<details>
+<summary><strong>📁 chap05-array</strong></summary>
+
+<details>
+<summary><strong>📂 - section01.array</strong></summary>
+
+<details>
+<summary><strong>📂 - - Level 02 - Normal</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.section01.array.level02.normal`
+- **구현 클래스:**
+  - `Application1.java`
+    - 문자열을 입력받아 문자 배열로 변환한 후 특정 문자의 개수를 찾는 프로그램
+  - `Application2.java`
+    - 주민등록번호를 입력받아 성별 자리 이후부터 *로 마스킹하는 프로그램
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin1 --
+문자열을 하나 입력하세요 : helloworld 
+검색할 문자를 입력하세요 : l 
+입력하신 문자열 helloworld에서 찾으시는 문자 l은 3개 입니다.
+```
+```
+-- 출력 예시 - Applicatoin2 --
+주민등록번호를 입력하세요 : 990101-1234567 
+990101-1******
+```
+
+</details>
+
+
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - - Level 03 - Hard</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowule.section01.array.level03.hard`
+- **구현 클래스:**
+  - `Application1.java`
+    - 홀수인 양의 정수를 입력받아 배열을 할당하고 대칭 형태의 값을 저장 후 출력
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin1 --
+홀수인 양의 정수를 입력하세요 : 7 
+1 2 3 4 3 2 1
+
+단, 홀수가 아닌 수를 입력할 경우 "양수 혹은 홀수만 입력해야 합니다."
+```
+```
+-- 출력 예시 - Applicatoin2 --
+
+```
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - - Level 04 - Advanced</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.section01.array.level04.advanced`
+- **구현 클래스:**
+  - `Application1.java`
+    - 중복되지 않는 1~45 사이의 랜덤한 6개 숫자를 생성하고 정렬하여 출력하는 로또 번호 생성기
+  - `Application2.java`
+    - 숫자 야구게임 구현 (4자리 중복 없는 숫자를 맞추는 게임)
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin1 --
+3 7 15 21 35 42
+```
+```
+-- 출력 예시 - Applicatoin2 --
+10회 남으셨습니다. 
+4자리 숫자를 입력하세요 : 1234 
+아쉽네요 0S 2B 입니다. 
+9회 남으셨습니다. 
+4자리 숫자를 입력하세요 : 7416 
+정답입니다.
+
+단, 4자리 숫자 이외 입력의 경우 "4자리 숫자를 입력해야 합니다."
+```
+
+</details>
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - section02.demensional_array</strong></summary>
+
+
+<details>
+<summary><strong>📂 - - Level 03 - Hard</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.section02.demensional_array.level03.hard`
+- **구현 클래스:**
+  - `Application1.java`
+    - 가로, 세로 길이를 입력받아 랜덤한 알파벳 대문자로 채운 2차원 배열을 생성 후 출력
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin1 --
+ 가로 행의 수를 입력하세요 : 5 
+ 세로 열의 수를 입력하세요 : 4
+
+F H Z G W F O T O R X V W H J X W S S J
+
+단 1 ~ 10 이외의 정수 입력의 경우 " 반드시 1~10까지의 정수를 입력해야 합니다. 다시 입력하세요."
+```
+
+
+</details>
+
+
+</details>
+
+<br>
+
+</details>
+
+</details>
 
 
 
