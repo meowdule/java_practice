@@ -62,6 +62,18 @@
  └── 📂 section02.demensional_array
      └── 📂 level03.hard
          └── Application1.java
+              
+📂 chap06-class-and-object
+ ├── 📂 level01.basic
+ │   ├── 📂 student.model.dto
+ │   │   └── StudentDTO.java
+ │   └── 📂 student.run
+ │       └── Application.java
+ └── 📂 level02.normal
+     ├── 📂 book.model.dto
+     │   └── bookDTO.java
+     └── 📂 book.run
+         └── Application.java
 ```
 </details>
 
@@ -608,6 +620,100 @@ F H Z G W F O T O R X V W H J X W S S J
 
 </details>
 
+---
+
+<details>
+<summary><strong>📁 chap06-class-and-object</strong></summary>
+
+<details>
+<summary><strong>📂 - level01.basic-student</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.greedy.level01.basic.student`
+- **구현 클래스:**
+  - `StudentDTO.java`
+    - `StudentDTO()`: 기본 생성자
+    - `StudentDTO(grade, classroom, name, kor, eng, math)`: 학생 정보 초기화 생성자
+    - `getInformation()`: 학생 정보 및 평균 점수 출력
+  - `Application.java`
+    - `main()`: 최대 10명의 학생 정보를 입력받아 출력
+
+📄 **[문제 PDF 보기](pdf/chap06-class-and-object-practice-2.pdf)**
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin --
+학년 : 1 
+반 : 5 
+이름 : 홍길동 
+국어점수 : 40 
+영어점수 : 60 
+수학점수 : 70 
+계속 추가할 겁니까 ? (y/n) : y
+
+학년 : 2 
+반 : 1 
+이름 : 김말똥 
+국어점수 : 70 
+영어점수 : 80 
+수학점수 : 100 
+계속 추가할 겁니까 ? (y/n) : y
+
+학년=1, 반=5, 이름=홍길동, 국어=40, 영어=60, 수학=70, 평균=56 
+학년=2, 반=1, 이름=김말똥, 국어=70, 영어=80, 수학=100, 평균=83 
+학년=3, 반=3, 이름=강경순, 국어=100, 영어=75, 수학=86, 평균=87
+```
+
+</details>
+
+
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - level02.normal-book</strong></summary>
+
+
+**📌 문제 개요**
+
+- **패키지:** `com.greedy.level02.normal.book`
+- **구현 클래스:**
+  - `BookDTO.java`
+    - `BookDTO()`: 기본 생성자
+    - `BookDTO(title, publisher, author)`: 3개 필드 초기화 생성자
+    - `BookDTO(title, publisher, author, price, discountRate)`: 모든 필드 초기화 생성자
+    - `setters / getters`: 필드 값 수정 및 반환
+    - `printInformation()`: 필드 값 출력
+  - `Application.java`
+    - `main()`: `BookDTO`의 모든 메서드를 호출하여 결과 출력
+
+📄 **[문제 PDF 보기](pdf/chap06-class-and-object-practice-1.pdf)**
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Applicatoin --
+null, null, null, 0, 0.0 
+자바의 정석, 도우출판, 남궁성, 0, 0.0 
+홍길동전, 활빈당, 허균, 5000000, 0.5
+
+```
+
+
+</details>
+
+
+</details>
+
+<br>
+
+</details>
 
 
 <br><br><br>
