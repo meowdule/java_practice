@@ -74,6 +74,21 @@
      │   └── bookDTO.java
      └── 📂 book.run
          └── Application.java
+         
+📂 chap08-polymorphism
+ └── 📂 level01.basic
+     ├── Shape.java
+     ├── ShapeManager.java
+     ├── Resizable.java
+     ├── Circle.java
+     ├── Rectangle.java
+     ├── Triangle.java
+     └── Application.java
+     
+📂 chap09-api
+ └── 📂 level01.basic
+     ├── Application1.java
+     └── Application2.java
 ```
 </details>
 
@@ -715,6 +730,131 @@ null, null, null, 0, 0.0
 
 </details>
 
+
+---
+
+<details>
+<summary><strong>📁 chap08-polymorphism </strong></summary>
+
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.level01.basic`
+- **구현 클래스:**
+  - `Shape.java`
+    - `calculateArea()`: 도형의 넓이 계산 메소드 (추상 메소드)
+    - `calculatePerimeter()`: 도형의 둘레 계산 메소드 (추상 메소드)
+  - `Resizable.java`
+    - `resize(double factor)`: 도형의 모든 속성을 인자만큼 곱해 크기를 조정하는 메소드
+  - `Circle.java`
+    - Shape 추상 클래스를 상속받고 Resizable 인터페이스를 구현하는 클래스
+    - 속성: `radius` (반지름)
+  - `Rectangle.java`
+    - Shape 추상 클래스를 상속받고 Resizable 인터페이스를 구현하는 클래스
+    - 속성: `width` (너비), `height` (높이)
+  - `Triangle.java`
+    - Shape 추상 클래스를 상속받고 Resizable 인터페이스를 구현하는 클래스
+    - 속성: `base` (밑변), `height` (높이), `side1` (첫 번째 변), `side2` (두 번째 변), `side3` (세 번째 변)
+  - `ShapeManager.java`
+    - `addShape(Shape shape)`: 배열에 도형 추가 (배열 크기가 부족하면 2배로 확장하여 추가)
+    - `removeShape(Shape shape)`: 배열에서 도형을 찾아 제거하고, 빈 인덱스를 없애기 위해 뒤쪽 도형을 앞으로 당김
+    - `printAllShapes()`: 저장된 모든 도형의 이름, 넓이, 둘레를 출력
+    - `getTotalArea()`: 저장된 모든 도형의 넓이 총합을 반환
+    - `getTotalPerimeter()`: 저장된 모든 도형의 둘레 총합을 반환
+  - `Application.java`
+    - `main()`: 도형 객체(Circle, Rectangle, Triangle)를 생성 및 추가하고, 도형 정보 출력, 크기 조정 후 재출력, 도형 삭제 후 재출력하여 결과를 확인
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+===== 모든 도형 출력 =====
+Shape: Circle
+Area: 78.53981633974483
+Perimeter: 31.41592653589793
+Shape: Rectangle
+Area: 20.0
+Perimeter: 18.0
+Shape: Triangle
+Area: 6.0
+Perimeter: 12.0
+총 넓이 출력 : 104.53981633974483
+총 둘레 출력 : 61.41592653589793
+===== 크기 조정 후 모든 도형 출력 =====
+Shape: Circle
+Area: 314.1592653589793
+Perimeter: 62.83185307179586
+Shape: Rectangle
+Area: 80.0
+Perimeter: 36.0
+Shape: Triangle
+Area: 24.0
+Perimeter: 24.0
+총 넓이 출력 : 418.1592653589793
+총 둘레 출력 : 122.83185307179586
+===== Circle 삭제 후 모든 도형 출력 =====
+Shape: Rectangle
+Area: 80.0
+Perimeter: 36.0
+Shape: Triangle
+Area: 24.0
+Perimeter: 24.0
+총 넓이 출력 : 104.0
+총 둘레 출력 : 60.0
+```
+
+</details>
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>📁 chap01-literal-and-variable</strong></summary>
+
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+**📌 문제 개요**
+
+- **패키지:** `com.meowdule.level01.basic`
+- **구현 클래스:**
+- **구현 클래스:**
+  - `Application1.java`
+    - 사용자로부터 입력받은 텍스트에서 공백을 기준으로 단어를 분리한 후, <br> 각 단어의 첫 글자를 대문자로 변환하여 변환된 문자열과 전체 단어 개수를 출력 <br>(String과 StringBuilder 활용)
+  - `Application2.java`
+    - 사용자로부터 입력받은 텍스트에서 영문자만 대소문자 구분 없이 단어의 빈도를 계산한 후, <br>각 단어의 빈도와 가장 자주 등장하는 단어(및 등장 횟수)를 출력 <br>(String과 StringBuilder 활용)
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+-- 출력 예시 - Application1 --
+문자열 입력 : I will be a good developer.
+변환된 문자열: I Will Be A Good Developer.
+총 단어 개수: 6
+```
+```
+-- 출력 예시 - Application2 --
+문자열 입력 : hello world Hello everyone! 안녕하세요 반갑습니다
+===== 단어 빈도 =====
+hello: 2
+world: 1
+everyone: 1
+가장 빈도 높은 단어 : hello (2 번)
+```
+
+</details>
+
+</details>
+
+</details>
 
 <br><br><br>
 
