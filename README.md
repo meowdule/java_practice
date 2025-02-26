@@ -8,7 +8,12 @@
 
 <details>
 <summary><strong>📂 </strong></summary>
- 
+
+<br>
+
+<details>
+<summary><strong>📂 chap01-literal-and-variable </strong></summary>
+  
 ```
 📂 chap01-literal-and-variable
  ├── 📂 level01.basic
@@ -17,7 +22,16 @@
  └── 📂 level02.normal
      ├── Application1.java
      └── Application2.java
-     
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 chap03-method-and-api </strong></summary>
+
+```
 📂 chap03-method-and-api
  ├── 📂 level01.basic
  │   ├── Calculator.java
@@ -25,7 +39,16 @@
  └── 📂 level02.normal
      ├── RandomMaker.java
      └── Application.java
-     
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 chap04-control-flow </strong></summary>
+ 
+```
 📂 chap04-control-flow
  ├── 📂 section01
  │   ├── 📂 level02.normal
@@ -48,7 +71,17 @@
      │   └── Application3.java
      └── 📂 level04.advanced
          └── Application1.java
-     
+```
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong>📂 chap05-array </strong></summary>
+ 
+```
 📂 chap05-array
  ├── 📂 section01.array
  │   ├── 📂 level02.normal
@@ -62,7 +95,18 @@
  └── 📂 section02.demensional_array
      └── 📂 level03.hard
          └── Application1.java
-              
+```
+
+</details>
+
+<br>
+
+
+<details>
+<summary><strong>📂 chap06-class-and-object </strong></summary>
+ 
+```
+
 📂 chap06-class-and-object
  ├── 📂 level01.basic
  │   ├── 📂 student.model.dto
@@ -74,7 +118,18 @@
      │   └── bookDTO.java
      └── 📂 book.run
          └── Application.java
-         
+```
+
+</details>
+
+<br>
+
+
+<details>
+<summary><strong>📂 chap08-polymorphism </strong></summary>
+ 
+```
+
 📂 chap08-polymorphism
  └── 📂 level01.basic
      ├── Shape.java
@@ -84,13 +139,76 @@
      ├── Rectangle.java
      ├── Triangle.java
      └── Application.java
-     
+```
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong>📂 chap09-api </strong></summary>
+ 
+```
+
 📂 chap09-api
  └── 📂 level01.basic
      ├── Application1.java
      └── Application2.java
 ```
 </details>
+
+<br>
+
+<details>
+<summary><strong>📂 chap10-exception </strong></summary>
+ 
+```
+
+📂 chap10-exception
+ ├── 📂 level01.basic
+ │   └── Application1.java
+ └── 📂 level02.normal
+     └── Application2.java
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 chap11-io </strong></summary>
+ 
+```
+
+📂 chap11-io
+ ├── 📂 level01.basic
+ │   ├── Application1.java
+ │   └── Application2.java
+ └── 📂 level02.normal
+     └── Application.java
+```
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong>📂 chap12-generic </strong></summary>
+ 
+```
+
+📂 chap12-generic
+ └── 📂 level01.basic
+     ├── Application1.java
+     └── Application2.java
+```
+
+</details>
+
+
+
 
 <br><br><br>
 
@@ -855,6 +973,231 @@ everyone: 1
 </details>
 
 </details>
+
+---
+
+<details>
+<summary><strong>📁 chap10-exception</strong></summary>
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+### 📌 여러 예외 처리
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application1.java`
+    - 사용자로부터 두 개의 정수를 입력받아 나눗셈을 수행하는 프로그램을 작성
+    - 정수가 아닌 값을 입력받을 경우와 나누는 수가 0일 경우의 예외 처리
+    - 마지막에는 항상 실행되는 메시지를 출력
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+----- 입출력 예시 1 -----
+분자 입력 : 10
+분모 입력 : 2
+
+결과 : 5
+실행이 완료되었습니다.
+
+----- 입출력 예시 2 -----
+분자 입력 : 십
+
+오류 : 유효한 정수를 입력하세요.
+실행이 완료되었습니다.
+
+----- 입출력 예시 3 -----
+분자 입력 : 10
+분모 입력 : 0
+
+오류 : 0으로 나누는 것은 허용되지 않습니다.
+실행이 완료되었습니다.
+```
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - Level 02 - Normal</strong></summary>
+
+### 📌 사용자 정의 예외
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application2.java`
+    - 생년월일을 입력 받아 만 20세 미만일 경우 `InvalidAgeException` 사용자 정의 예외 발생
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+----- 입출력 예시 1 -----
+생년월일 입력 (yyyy-MM-dd 양식으로 작성) : 2014-05-05
+
+만 20세 미만은 입장 불가입니다.
+
+----- 입출력 예시 2 -----
+생년월일 입력 (yyyy-MM-dd 양식으로 작성) : 1994-05-05
+
+입장하셔도 됩니다.
+
+----- 입출력 예시 3 -----
+생년월일 입력 (yyyy-MM-dd 양식으로 작성) : 2000-14-15
+
+날짜 양식을 잘못 입력하셨습니다.
+```
+
+</details>
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>📁 chap11-io</strong></summary>
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+### 📌 파일 읽기 예외 처리
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application1.java`
+    - 사용자로부터 파일 이름을 입력받아 해당 파일을 읽고 내용을 출력하는 프로그램 작성
+    - 파일이 존재하지 않을 경우 예외 처리
+  - `Application2.java`
+    - 사용자로부터 입력받은 파일의 내용을 읽어 새로운 파일에 복사하는 프로그램 작성
+    - 원본 파일이 존재하지 않을 경우 예외 처리
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+----- Application1 입출력 예시 -----
+----- 입출력 예시 1 -----
+파일 이름을 입력하세요 : hello.txt
+
+===== 파일 내용 출력 =====
+안녕하세요. 반갑습니다. 제 이름은 홍길동입니다.
+
+----- 입출력 예시 2 -----
+파일 이름을 입력하세요 : unknown.txt
+
+오류 : 해당 이름을 가진 파일이 없습니다.
+```
+```
+----- Application2 입출력 예시 -----
+----- 입출력 예시 1 -----
+원본 파일의 이름을 입력하세요 : origin.txt
+복사 파일의 이름을 입력하세요 : copy.txt
+
+파일 복사가 성공적으로 완료 되었습니다.
+
+----- 입출력 예시 2 -----
+원본 파일의 이름을 입력하세요 : origin2.txt
+복사 파일의 이름을 입력하세요 : copy2.txt
+
+오류 : origin2.txt (지정된 파일을 찾을 수 없습니다)
+```
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>📂 - Level 02 - Normal</strong></summary>
+
+### 📌 파일 병합
+
+- **패키지:** `com.ohgiraffers.level02.normal`
+- **구현 클래스:**
+  - `Application.java`
+    - 여러 개의 텍스트 파일을 하나의 파일로 병합하는 프로그램 작성
+    - `BufferedReader`와 `BufferedWriter` 사용
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+병합할 파일의 개수 입력 : 3
+1 번째 파일 이름 입력 : test.txt
+2 번째 파일 이름 입력 : test2.txt
+3 번째 파일 이름 입력 : test3.txt
+병합 될 파일명 입력 : result.txt
+파일 병합이 완료 되었습니다.
+```
+```
+병합할 파일의 개수 입력 : 2
+1 번째 파일 이름 입력 : test.txt
+2 번째 파일 이름 입력 : test4.txt
+병합 될 파일명 입력 : result.txt
+오류 : test4.txt (지정된 파일을 찾을 수 없습니다)
+```
+
+</details>
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>📁 chap12-generic</strong></summary>
+
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+### 📌 제네릭 메서드 작성
+
+- **패키지:** `com.ohgiraffers.level01.normal`
+- **구현 클래스:**
+  - `Application1.java`
+    - 두 개의 요소를 교환하는 제네릭 메서드 `swap`을 작성
+    - 배열과 교환할 인덱스 두 개를 매개변수로 받아 처리
+  - `Application2.java`
+    - `Number` 타입 또는 그 하위 타입만 허용하는 `sum` 메서드 작성
+    - 배열을 매개변수로 받아 해당 요소들의 합계를 반환하도록 구현
+    - `Number` 하위 타입이 아닌 경우 컴파일 에러 발생 확인
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+----- Applicatoin1.java -----
+swap 전 : [1, 2, 3, 4, 5]
+swap 후 : [1, 4, 3, 2, 5]
+
+swap 전 : [A, B, C, D]
+swap 후 : [C, B, A, D]
+```
+```
+----- Applicatoin2.java -----
+Integer 합계 : 15
+Double 합계 : 6.6
+```  
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+
+
 
 <br><br><br>
 
