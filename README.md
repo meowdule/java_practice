@@ -207,6 +207,8 @@
 
 </details>
 
+</details>
+
 
 
 
@@ -1194,7 +1196,6 @@ Double 합계 : 6.6
 
 </details>
 
-</details>
 
 
 
