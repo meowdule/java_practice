@@ -210,6 +210,30 @@
 </details>
 
 
+<br>
+
+<details>
+<summary><strong>📂 chap13-collection </strong></summary>
+ 
+```
+
+📂 chap13-collection
+ └── 📂 level01.basic
+     ├── Application1.java
+     ├── Application2.java
+     ├── Application3.java
+     ├── Application4.java
+     ├── Application5.java
+     └── Application6.java
+```
+
+</details>
+
+</details>
+
+
+
+
 
 
 <br><br><br>
@@ -1161,38 +1185,222 @@ everyone: 1
 <details>
 <summary><strong>📂 - Level 01 - Basic</strong></summary>
 
-### 📌 제네릭 메서드 작성
+</details>
 
-- **패키지:** `com.ohgiraffers.level01.normal`
+</details>
+
+</details>
+
+
+
+---
+
+<details>
+<summary><strong>📁 chap13-collection</strong></summary>
+
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+<details>
+<summary><strong>-- 📌 점수 평균 구하기</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
 - **구현 클래스:**
   - `Application1.java`
-    - 두 개의 요소를 교환하는 제네릭 메서드 `swap`을 작성
-    - 배열과 교환할 인덱스 두 개를 매개변수로 받아 처리
-  - `Application2.java`
-    - `Number` 타입 또는 그 하위 타입만 허용하는 `sum` 메서드 작성
-    - 배열을 매개변수로 받아 해당 요소들의 합계를 반환하도록 구현
-    - `Number` 하위 타입이 아닌 경우 컴파일 에러 발생 확인
+    - 학생들의 점수를 입력받아 저장한 후, 평균 점수를 계산하여 출력하는 프로그램 작성
 
 <details>
 <summary>🛠 실행 예시</summary>
 
 ```
------ Applicatoin1.java -----
-swap 전 : [1, 2, 3, 4, 5]
-swap 후 : [1, 4, 3, 2, 5]
-
-swap 전 : [A, B, C, D]
-swap 후 : [C, B, A, D]
+학생 성적 : 100
+추가 입력하려면 y : y
+학생 성적 : 95
+추가 입력하려면 y : Y
+학생 성적 : 66
+추가 입력하려면 y : y
+학생 성적 : 79
+추가 입력하려면 y : n
+학생 인원 : 4
+평균 점수 : 85.0
 ```
-```
------ Applicatoin2.java -----
-Integer 합계 : 15
-Double 합계 : 6.6
-```  
 
 </details>
 
 </details>
+
+<br>
+
+<details>
+<summary><strong> -- 📌 최근 방문한 URL 기록</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application2.java`
+    - 사용자가 방문한 웹사이트 URL을 입력받아 저장하고, 최근 5개의 URL을 출력하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://www.google.com/
+최근 방문 url : [https://www.google.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://github.com/
+최근 방문 url : [https://github.com/, https://www.google.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://www.notion.so/
+최근 방문 url : [https://www.notion.so/, https://github.com/, https://www.google.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://www.naver.com/
+최근 방문 url : [https://www.naver.com/, https://www.notion.so/, https://github.com/, https://www.google.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://github.com/
+최근 방문 url : [https://github.com/, https://www.naver.com/, https://www.notion.so/, https://github.com/, https://www.google.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : https://www.google.com/
+최근 방문 url : [https://www.google.com/, https://github.com/, https://www.naver.com/, https://www.notion.so/, https://github.com/]
+방문 URL을 입력하세요 (단, exit를 입력하면 종료) : exit
+```
+
+</details>
+
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 대기 줄 시뮬레이션</strong></summary>
+
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application3.java`
+    - 대기 고객을 관리하는 큐(queue) 시뮬레이션 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): 유관순
+유관순 고객님 대기 등록 되었습니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): 홍길동
+홍길동 고객님 대기 등록 되었습니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): next
+유관순 고객님 차례입니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): 신사임당
+신사임당 고객님 대기 등록 되었습니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): next
+홍길동 고객님 차례입니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): next
+신사임당 고객님 차례입니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): next
+대기 고객이 없습니다.
+대기 고객 이름 입력 (다음 고객으로 넘어가려면 'next', 종료하려면 'exit'): exit
+```
+
+</details>
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 학생 ID 관리</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application4.java`
+    - 중복되지 않는 학생 ID를 관리하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+학생 ID 입력('exit' 입력 시 종료): hello
+ID가 추가 되었습니다.
+학생 ID 입력('exit' 입력 시 종료): java
+ID가 추가 되었습니다.
+학생 ID 입력('exit' 입력 시 종료): programmer
+ID가 추가 되었습니다.
+학생 ID 입력('exit' 입력 시 종료): java
+이미 등록 된 ID입니다.
+학생 ID 입력('exit' 입력 시 종료): exit
+모든 학생의 ID : [java, programmer, hello]
+```
+
+</details>
+
+
+</details>
+
+
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 사전순 단어 정렬</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application5.java`
+    - 입력된 단어들을 사전순으로 정렬하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+단어 입력 ('exit' 입력 시 종료): 안녕
+단어 입력 ('exit' 입력 시 종료): java
+단어 입력 ('exit' 입력 시 종료): collection
+단어 입력 ('exit' 입력 시 종료): 프로그래밍
+단어 입력 ('exit' 입력 시 종료): exit
+정렬 된 단어 : [collection, java, 안녕, 프로그래밍]
+```
+
+</details>
+
+
+</details>
+
+<br>
+
+<details>
+<summary><strong> -- 📌 전화번호부 관리</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Application6.java`
+    - 이름을 입력하면 전화번호를 검색할 수 있는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): 홍길동010-1234-5678
+입력이 잘못 되었습니다. 다음 양식으로 입력해주세요 : <이름> <전화번호>
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): 홍길동 010-1234-5678
+추가 완료 : 홍길동 010-1234-5678
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): 유관순 010-9876-5432
+추가 완료 : 유관순 010-9876-5432
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): search
+검색 할 이름 : 유관순
+유관순씨의 전화번호 : 010-9876-5432
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): search
+검색 할 이름 : 이순신
+이순신씨의 번호는 등록 되어 있지 않습니다.
+이름과 전화번호를 띄어쓰기 기준으로 입력하세요 (검색하려면 'search', 종료하려면 'exit'): exit
+```
+
+
+
+</details>
+
+</details>
+
+
+</details>
+
 
 </details>
 
