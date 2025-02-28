@@ -226,6 +226,29 @@
 
 </details>
 
+<br>
+
+<details>
+<summary><strong>📂 chap16-stream </strong></summary>
+ 
+```
+
+📂 chap16-stream
+ └── 📂 level01.basic
+     ├── Application1.java
+     ├── Application2.java
+     ├── Application3.java
+     ├── Application4.java
+     ├── Application5.java
+     ├── Employee.java
+     ├── Order.java
+     ├── Student.java
+     ├── Movie.java
+     └── Book.java
+```
+
+</details>
+
 </details>
 
 
@@ -1396,6 +1419,178 @@ ID가 추가 되었습니다.
 
 </details>
 
+</details>
+
+
+
+
+---
+
+<details>
+<summary><strong>📁 chap16-strea</strong></summary>
+
+
+<details>
+<summary><strong>📂 - Level 01 - Basic</strong></summary>
+
+<details>
+<summary><strong>-- 📌 직원 데이터 처리</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Employee.java`
+    - 직원 정보를 저장하는 클래스
+  - `Application1.java`
+    - 직원 데이터를 처리하는 프로그램 작성 
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+직원 이름 목록 
+: 홍길동, 김철수, 이영희, 박민수, 최지현, 한석봉
+
+IT 부서의 급여 순 직원 목록 
+: [이영희, 홍길동, 한석봉]
+
+부서별 평균 급여 
+: {HR=3250.0, IT=6000.0, 영업=4000.0}
+```
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong> -- 📌 온라인 주문 처리 시스템</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Order.java`
+    - 주문 정보를 저장하는 클래스
+  - `Application2.java`
+    - 주문 데이터를 분석하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+배송 완료 상태인 주문번호 목록 
+: [O001, O003]
+
+고객별 총 주문 금액 
+: {홍길동=1200.0, 박민수=300.0, 이영희=600.0, 김철수=800.0}
+
+가장 많이 구매한 구매자 
+: 홍길동
+```
+
+</details>
+
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 학생 성적 처리</strong></summary>
+
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Student.java`
+    - 학생 정보를 저장하는 클래스
+  - `Application3.java`
+    - 학생 성적 데이터를 처리하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+학생들의 평균 점수 
+: {철수=87.5, 영희=90.5, 민수=86.5}
+
+수학에서 90점 이상 점수를 받은 학생 목록 
+: [철수, 영희]
+
+가장 높은 평균 점수를 받은 학생 
+: 영희
+```
+
+</details>
+
+</details>
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 영화 데이터 분석</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Movie.java`
+    - 영화 정보를 저장하는 클래스
+  - `Application4.java`
+    - 영화 데이터를 분석하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+평점 8점 이상의 액션 영화 리스트 
+: [인셉션, 다크 나이트]
+
+평균 영화 상영 시간 
+: 157.2
+
+장르별 최고 평점 영화 제목 
+: {SF=인터스텔라, 드라마=쇼생크 탈출, 액션=다크 나이트}
+```
+
+</details>
+
+
+</details>
+
+
+
+
+<br>
+
+<details>
+<summary><strong> -- 📌 도서 관리 시스템</strong></summary>
+
+- **패키지:** `com.ohgiraffers.level01.basic`
+- **구현 클래스:**
+  - `Book.java`
+    - 도서 정보를 저장하는 클래스
+  - `Application6.java`
+    - 도서 데이터를 관리하는 프로그램 작성
+
+<details>
+<summary>🛠 실행 예시</summary>
+
+```
+J.K. 롤링의 도서 목록 
+: [해리포터와 마법사의 돌, 해리포터와 비밀의 방]
+
+2000년 대 가장 비싼 도서 제목 
+: 다빈치 코드
+
+출판년도별 출판 도서 수 
+: {2000=1, 1937=1, 2003=1, 1997=1, 1998=1}
+```
+
+</details>
+
+
+</details>
+
+</details>
 
 </details>
 
