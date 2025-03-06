@@ -1,0 +1,153 @@
+{
+  "PHQ9": {
+      "questions": [
+        {
+          "questionText": "1. 일상생활에서 흥미나 즐거움을 느끼지 못함",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "2. 기분이 우울하거나, 절망감을 느낌",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "3. 잠을 잘 못 자거나 너무 많이 잠",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "4. 피로감이나 에너지 부족",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "5. 식욕 부진이나 과식",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "6. 자신에 대한 부정적인 생각",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "7. 집중력 저하",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "8. 움직임이나 말이 느려짐 또는 과도한 초조함",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "9. 자살에 대한 생각",
+          "testMaxScore": 3
+        },
+        {
+          "questionText": "10. 일상생활에서 어려움",
+          "testMaxScore": 3
+        }
+      ],
+      "responseMapping": {
+        "0": "전혀 없음",
+        "1": "며칠 동안",
+        "2": "일주일 이상",
+        "3": "거의 매일"
+      }
+    },
+  "AUDITK": {
+    "questions": [
+      {
+        "questionText": "1. 얼마나 자주 술을 마십니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "2. 한 번의 술자리에서 몇 잔 정도 마십니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "3. 한 번 마시기 시작하면 멈출 수 없었던 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "4. 음주로 인해 일상생활에 지장을 받은 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "5. 해장술이 필요했던 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "6. 음주 후 죄책감을 느낀 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "7. 음주로 인해 기억을 잃은 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "8. 음주로 인해 자신이나 타인이 다친 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "9. 주변에서 음주에 대해 걱정하거나 권유한 적이 있습니까?",
+        "testMaxScore": 4
+      },
+      {
+        "questionText": "10. 음주로 인해 법적인 문제를 겪은 적이 있습니까?",
+        "testMaxScore": 4
+      }
+    ],
+    "responseMapping": {
+      "0": "없음",
+      "1": "월 1회 미만",
+      "2": "월 2-4회",
+      "3": "주 2-3회",
+      "4": "주 4회 이상"
+    }
+  },
+  "BAI": {
+    "questions": [
+      {
+        "questionText": "1. 몸이 저리거나 감각이 둔해짐",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "2. 가슴이 두근거림",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "3. 어지러움",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "4. 긴장감",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "5. 공포감",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "6. 소화불량",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "7. 숨 가쁨",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "8. 땀 흘림",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "9. 떨림",
+        "testMaxScore": 3
+      },
+      {
+        "questionText": "10. 질식할 것 같은 느낌",
+        "testMaxScore": 3
+      }
+    ],
+    "responseMapping": {
+      "0": "전혀 느끼지 않음",
+      "1": "약간 느꼈음",
+      "2": "상당히 느꼈음",
+      "3": "심하게 느꼈음"
+    }
+  }
+}
