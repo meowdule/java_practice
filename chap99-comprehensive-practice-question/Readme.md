@@ -12,17 +12,27 @@
 
 ## 2️⃣ 주요 기능
 
-###  **1) 테스트 진행**
+###  **1) 회원 관리**
+-  사용자는 회원가입을 통해 개인 계정을 생성하고 로그인 가능
+-  로그인한 사용자만 테스트를 실행하고 결과를 조회 가능
+-  회원 정보는 JSON 기반의 데이터 저장소(`user_data.json`)에서 관리됨
+
+###  **2) 테스트 진행**
 -  사용자는 제공된 테스트 목록에서 원하는 테스트를 선택하여 진행
 -  각 테스트는 고유한 질문 목록과 응답 기준을 포함
 -  사용자가 응답한 점수를 기반으로 결과 자동 계산
 
-###  **2) 결과 분석 및 해석**
+###  **3) 결과 분석 및 해석**
 -  응답 점수를 바탕으로 `ScoreEvaluator`에서 결과 해석 후 출력
 -  각 테스트별 점수 기준을 정렬하여 보기 쉽게 출력
 -  결과 해석 기준(`Score Criteria`)을 함께 제공
 
-###  **3) 확장 가능성 고려**
+###  **4) 검사 기록 관리**
+-  사용자는 자신의 검사 기록을 조회 가능
+-  테스트 완료 후 기록이 `user_data.json`에 자동 저장됨
+-  사용자가 탈퇴하면 해당 기록도 삭제됨
+
+###  **5) 확장 가능성 고려**
 -  **팩토리 패턴 (`TestFactory`)** 활용하여 새로운 테스트를 쉽게 추가 가능
 -  질문 목록 및 응답 매핑을 **JSON 파일**로 관리하여 데이터 변경 용이
 -  **역할별 클래스 분리** (`TestService`, `ScoreEvaluator`, `TestDataLoader` 등)로 유지보수성 향상
@@ -34,33 +44,47 @@
 ## 3️⃣ 설계 및 구조
 
 ### 📂 **1) 프로젝트 구조**
+
+<details>
+ <summary>📂 파일 트리</summary>
+
 ```
 📂 com.meowdule.practice.comprehensive
  ├── 📂 db
- │   └── test_questions.json
+ │   ├── test_questions.json
+ │   ├── user_data.json
  ├── 📂 domain
  │   ├── TestType.java
  │   ├── Question.java
- │   └── TestResult.java
+ │   ├── TestResult.java
  ├── 📂 repository
  │   ├── TestDataLoader.java
  │   ├── TestFactory.java
+ │   ├── UserRepository.java
+ │   ├── UserStorage.java
  │   ├── AUDITTest.java
  │   ├── BAITest.java
- │   └── PHQTest.java
- ├── 📂 service 
+ │   ├── PHQTest.java
+ ├── 📂 service
  │   ├── TestService.java
- │   └── ScoreEvaluator.java
+ │   ├── ScoreEvaluator.java
+ │   ├── UserService.java
+ │   ├── UserManagementService.java
+ │   ├── UserTestHistoryService.java
  └── 📂 ui
      └── Application.java
-
 ```
+
+</details>
+
+<br>
 
 ### 🏗 **2) 클래스 설명**
 #### 📌 **db (데이터 저장소)**
 |  클래스명 |  설명 |
 |----------|------------------------------------------------|
-| `test_questions.json` | 자기진단 검사의 질문과 배점, 점수기준이 포함되어있는 파일 |
+| `test_questions.json` | 자기진단 검사의 질문과 배점, 점수기준이 포함된 파일 |
+| `user_data.json` | 사용자 정보와 검사 기록을 저장하는 파일 |
 
 #### 📌 **domain (도메인 계층)**
 |  클래스명 |  설명 |
@@ -74,6 +98,8 @@
 |----------|------------------------------------------------|
 | `TestDataLoader` | JSON 파일에서 테스트 질문과 응답 매핑을 로드하는 클래스 |
 | `TestFactory` | 자동으로 테스트를 등록하고 관리하는 팩토리 클래스 |
+| `UserRepository` | 사용자 정보를 JSON 파일에서 불러오고 저장하는 클래스 |
+| `UserStorage` | 사용자 데이터를 저장 및 관리하는 인터페이스 |
 | `AUDITTest` | AUDIT-K(알코올 의존) 테스트 정보를 제공하는 클래스 |
 | `BAITest` | BAI(불안 장애) 테스트 정보를 제공하는 클래스 |
 | `PHQTest` | PHQ-9(우울증 테스트) 정보를 제공하는 클래스 |
@@ -83,6 +109,9 @@
 |----------|------------------------------------------------|
 | `TestService` | 테스트 실행 및 사용자 입력을 처리하는 서비스 클래스 |
 | `ScoreEvaluator` | 사용자의 점수를 평가하고 결과를 반환하는 클래스 |
+| `UserService` | 사용자 로그인, 로그아웃, 회원 관리 로직 담당 |
+| `UserManagementService` | 회원가입, 로그인, 탈퇴 기능 제공 |
+| `UserTestHistoryService` | 사용자의 검사 기록을 관리하는 서비스 |
 
 #### 📌 **ui (콘솔 UI 계층)**
 |  클래스명 |  설명 |
@@ -129,5 +158,4 @@
 -  `test` 패키지에서 JUnit 테스트 실행
 
 ---
-
 
