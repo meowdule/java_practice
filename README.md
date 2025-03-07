@@ -258,20 +258,26 @@
 
 📂 com.meowdule.practice.comprehensive
  ├── 📂 db
- │   └── test_questions.json
+ │   ├── test_questions.json
+ │   ├── user_data.json
  ├── 📂 domain
  │   ├── TestType.java
  │   ├── Question.java
- │   └── TestResult.java
+ │   ├── TestResult.java
  ├── 📂 repository
  │   ├── TestDataLoader.java
  │   ├── TestFactory.java
+ │   ├── UserRepository.java
+ │   ├── UserStorage.java
  │   ├── AUDITTest.java
  │   ├── BAITest.java
- │   └── PHQTest.java
- ├── 📂 service 
+ │   ├── PHQTest.java
+ ├── 📂 service
  │   ├── TestService.java
- │   └── ScoreEvaluator.java
+ │   ├── ScoreEvaluator.java
+ │   ├── UserService.java
+ │   ├── UserManagementService.java
+ │   ├── UserTestHistoryService.java
  └── 📂 ui
      └── Application.java
 
