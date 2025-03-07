@@ -249,6 +249,36 @@
 
 </details>
 
+<br>
+
+<details>
+<summary><strong>📂 chap99-comprehensive </strong></summary>
+ 
+```
+
+📂 com.meowdule.practice.comprehensive
+ ├── 📂 db
+ │   └── test_questions.json
+ ├── 📂 domain
+ │   ├── TestType.java
+ │   ├── Question.java
+ │   └── TestResult.java
+ ├── 📂 repository
+ │   ├── TestDataLoader.java
+ │   ├── TestFactory.java
+ │   ├── AUDITTest.java
+ │   ├── BAITest.java
+ │   └── PHQTest.java
+ ├── 📂 service 
+ │   ├── TestService.java
+ │   └── ScoreEvaluator.java
+ └── 📂 ui
+     └── Application.java
+
+```
+
+</details>
+
 </details>
 
 
