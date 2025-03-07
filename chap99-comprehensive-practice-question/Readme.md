@@ -35,12 +35,25 @@
 
 ### 📂 **1) 프로젝트 구조**
 ```
-com.meowdule.practice.comprehensive
-│── domain            # 핵심 도메인 클래스 (TestType, Question, TestResult 등)
-│── repository        # 테스트 데이터 및 유형 관리 (TestDataLoader, TestFactory 등)
-│── service          # 테스트 실행 및 결과 평가 (TestService, ScoreEvaluator 등)
-│── ui               # 콘솔 UI 실행 관리 (Application)
-│── test             # JUnit 기반 테스트 코드
+📂 com.meowdule.practice.comprehensive
+ ├── 📂 db
+ │   └── test_questions.json
+ ├── 📂 domain
+ │   ├── TestType.java
+ │   ├── Question.java
+ │   └── TestResult.java
+ ├── 📂 repository
+ │   ├── TestDataLoader.java
+ │   ├── TestFactory.java
+ │   ├── AUDITTest.java
+ │   ├── BAITest.java
+ │   └── PHQTest.java
+ ├── 📂 service 
+ │   ├── TestService.java
+ │   └── ScoreEvaluator.java
+ └── 📂 ui
+     └── Application.java
+
 ```
 
 ### 🏗 **2) 클래스 설명**
